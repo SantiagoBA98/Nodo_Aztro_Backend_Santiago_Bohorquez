@@ -4,12 +4,14 @@ import org.aztro.domains.abstracts.Operacion;
 
 public class Multiplicar extends Operacion {
 
-    public Multiplicar(float numA, float numB) {
+    public Multiplicar(double numA, double numB) {
         super(numA, numB);
     }
 
     @Override
     public void Operacion() {
-        System.out.println(this.numA * this.numB);
+        this.setResultado(this.numA * this.numB);
+        this.setOperacion("Multiplicación");
+        setResultado(this.resultado);
     }
 }

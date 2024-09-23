@@ -4,12 +4,14 @@ import org.aztro.domains.abstracts.Operacion;
 
 public class Sumar extends Operacion {
 
-    public Sumar(float numA, float numB) {
+    public Sumar(double numA, double numB) {
         super(numA, numB);
     }
 
     @Override
     public void Operacion() {
-        System.out.println(this.numA + this.numB);
+        this.setResultado(this.numA + this.numB);
+        this.setOperacion("Suma");
+        setResultado(this.resultado);
     }
 }
